@@ -1,0 +1,30 @@
+﻿<Window x:Class="_10_RadioButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_10_RadioButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label FontWeight="Bold" FontSize="20">¿ Te gusta Ricardo Milos?</Label>
+        <RadioButton Margin="5" Checked="YesChecked">
+            <WrapPanel>
+                <Rectangle Fill="Green" Width="16" Height="16"/>
+                <TextBlock Text="si" Foreground="Green" Margin="5,0,0,0"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Margin="5" Checked="NoChecked">
+            <WrapPanel>
+                <Rectangle Fill="Red" Width="16" Height="16"/>
+                <TextBlock Text="no" Foreground="Red" Margin="5,0,0,0"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Margin="5" Checked="Maybe_Checked">
+            <WrapPanel>
+                <Rectangle Fill="Yellow" Width="16" Height="16"/>
+                <TextBlock Text="Tal Vez" Foreground="Black" Margin="5,0,0,0"/>
+            </WrapPanel>
+        </RadioButton>
+    </StackPanel>
+</Window>
